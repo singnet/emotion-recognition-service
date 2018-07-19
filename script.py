@@ -49,7 +49,7 @@ def _classify(image):
     model = Model()
 
     # Requires us to save the file to disk
-    f = tempfile.TemporaryFile(delete=False)
+    f = tempfile.NamedTemporaryFile(delete=False)
     f.write(image)
     # close vs. flush because flush apparently won't work on windows
     f.close()
