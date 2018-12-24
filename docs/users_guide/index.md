@@ -1,4 +1,4 @@
-![singnetlogo](assets/singnet-logo.jpg?raw=true 'SingularityNET')
+![singnetlogo](../assets/singnet-logo.jpg?raw=true 'SingularityNET')
 
 # Emotion Recognition Service
 ## Service User's Guide
@@ -12,7 +12,7 @@ faces and the emotion.
 
 ### How does it work?
 
-The user must provide a request satisfying the proto descriptions [given](../service_spec/EmotionService.proto). That is
+The user must provide a request satisfying the proto descriptions [given](../../service_spec/EmotionService.proto). That is
 
 * An request with `image_type`: the type of the input image. 
 * And the image `image`: the string64 encoded input image.
@@ -34,7 +34,7 @@ message RecognizeResponse {
 }
 ```
 
-An example result obtained after passing the [image](../turtles.png)
+An example result obtained after passing the [image](../../turtles.png)
 ```bash
 predictions: "fear"
 predictions: "happy"
