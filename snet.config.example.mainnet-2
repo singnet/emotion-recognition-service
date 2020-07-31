@@ -8,7 +8,7 @@
    "ssl_cert": "/etc/letsencrypt/live/services-1.snet.sh/fullchain.pem",
    "ssl_key": "/etc/letsencrypt/live/services-1.snet.sh/privkey.pem",
    "payment_channel_cert_path": "/ssl/client.pem",
-   "pamyent_channel_ca_path": "/ssl/ca.pem",
+   "payment_channel_ca_path": "/ssl/ca.pem",
    "payment_channel_key_path": "/ssl/client-key.pem",
    "ethereum_json_rpc_endpoint": "https://mainnet.infura.io/v3/e7732e1f679e461b9bb4da5653ac3fc2",
    "blockchain_network_selected": "main",
