@@ -7,12 +7,12 @@
    "SERVICE_ID": "emotion-recognition-service",
    "ssl_cert": "/etc/letsencrypt/live/services-1.snet.sh/fullchain.pem",
    "ssl_key": "/etc/letsencrypt/live/services-1.snet.sh/privkey.pem",
-   "payent_channel_cert_path": "/ssl/client.pem",
-   "payent_channel_ca_path": "/ssl/ca.pem",
-   "payent_channel_key_path": "/ssl/client-key.pem",
-   "free_call_signer_address":"0x3Bb9b2499c283cec176e7C707Ecb495B7a961ebf",
+   "payment_channel_cert_path": "/ssl/client.pem",
+   "pamyent_channel_ca_path": "/ssl/ca.pem",
+   "payment_channel_key_path": "/ssl/client-key.pem",
+   "ethereum_json_rpc_endpoint": "https://mainnet.infura.io/v3/e7732e1f679e461b9bb4da5653ac3fc2",
    "blockchain_network_selected": "main",
-   "metering_end_point": "https://mainnet-marketplace.singularitynet.io/metering",
+   "metering_end_point": "https://mainnet-marketplace.singularitynet.io",
    "pvt_key_for_metering": "a9d479cad7ae6dbe830d8c68ea2ac5bf0f386408c0e92ffd49bd2e284734182a",
 
    "LOG": {

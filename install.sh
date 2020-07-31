@@ -1,7 +1,7 @@
 #!/bin/bash
 
 snet_daemon_v=1.0.0
-snet_daemon_v_2=2.0.2
+snet_daemon_v_2=3.1.2
 
 
 # apt install tar
