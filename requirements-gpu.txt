@@ -6,13 +6,13 @@ certifi
 cycler
 decorator
 gast
-grpcio
-grpcio_tools
+grpcio==1.17.0
+grpcio_tools==1.17.0
 h5py==2.7.1
 html5lib==0.9999999
 jedi
 Keras==2.1.6
-tensorflow-gpu
+tensorflow-gpu==1.9.0
 kiwisolver
 Mako
 Markdown==2.6.11
