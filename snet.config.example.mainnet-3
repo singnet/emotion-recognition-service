@@ -1,0 +1,23 @@
+{
+   "DAEMON_END_POINT": "0.0.0.0:7001",
+   "blockchain_network_selected": "main",
+   "ETHEREUM_JSON_RPC_ENDPOINT": "https://mainnet.infura.io/v3/e7732e1f679e461b9bb4da5653ac3fc2",
+   "IPFS_END_POINT": "http://ipfs.singularitynet.io:80",
+   "PASSTHROUGH_ENABLED": true,
+   "PASSTHROUGH_ENDPOINT": "http://localhost:50051",
+   "ORGANIZATION_ID": "snet",
+   "SERVICE_ID": "named-entity-disambiguation",
+   "ssl_cert": "/etc/letsencrypt/live/tz-services-1.snet.sh/fullchain.pem",
+   "ssl_key": "/etc/letsencrypt/live/tz-services-1.snet.sh/privkey.pem",
+   "payment_channel_cert_path": "/etc/letsencrypt/live/tz-services-1.snet.sh/client.pem",
+   "payment_channel_ca_path": "/etc/letsencrypt/live/tz-services-1.snet.sh/ca.pem",
+   "payment_channel_key_path": "/etc/letsencrypt/live/tz-services-1.snet.sh/client-key.pem",
+   "metering_end_point": "https://mainnet-marketplace.singularitynet.io",
+   "pvt_key_for_metering": "6b2b82a9205ab6bda77a82920e6aaf1276c80a7e59945fe3710349d057ae4ff6",
+   "LOG": {
+       "LEVEL": "debug",
+       "OUTPUT": {
+              "TYPE": "stdout"
+           }
+   }
+}

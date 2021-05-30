@@ -35,4 +35,4 @@ EXPOSE 6305
 
 RUN python3.6 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. service_spec/EmotionService.proto
 
-CMD ["python3.6", "run-snet-service.py","--daemon-config-path-kovan","snet.config.example.kovan.json","--daemon-config-path-ropsten","snet.config.example.ropsten.json"]
+CMD ["python3.6", "run-snet-service.py","--daemon-config-path-kovan","snet.config.example.kovan.json","--daemon-config-path-mainnet-3","snet.config.example.mainnet-3.json","--daemon-config-path-ropsten","snet.config.example.ropsten.json"]
