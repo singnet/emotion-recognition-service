@@ -8,7 +8,7 @@ decorator
 gast
 grpcio==1.17.0
 grpcio_tools==1.17.0
-h5py==2.7.1
+h5py==2.8.0
 html5lib==0.9999999
 jedi
 Keras==2.1.6
@@ -18,7 +18,7 @@ Mako
 Markdown==2.6.11
 MarkupSafe
 matplotlib
-numpy
+numpy==1.16.4
 opencv-python
 pexpect
 pickleshare
