@@ -2,7 +2,7 @@ FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
 RUN apt-get update
 RUN apt-get install -y software-properties-common
-RUN add-apt-repository ppa:deadsnakes/ppa -y
+RUN add-apt-repository ppa:fkrull/deadsnakes -y
 RUN apt-get update && apt-get install -y --no-install-recommends \
         git \
         build-essential \
@@ -15,13 +15,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
         libsm6 \
         libxext6 \ 
-        libxrender-dev
+        libxrender-dev \
+        ffmpeg
 
 COPY requirements-gpu.txt /tmp
 
 WORKDIR /tmp
 
-RUN curl https://bootstrap.pypa.io/get-pip.py | python3.6
+RUN curl https://bootstrap.pypa.io/pip/3.6/get-pip.py | python3.6
 RUN python3.6 -m pip install -r requirements-gpu.txt
 
 COPY . /emotion-recognition-service
@@ -33,7 +34,9 @@ RUN ./install.sh
 EXPOSE 6405
 EXPOSE 6305
 EXPOSE 6205
+EXPOSE 7001
 
 RUN python3.6 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. service_spec/EmotionService.proto
 
-CMD ["python3.6", "run-snet-service.py","--daemon-config-path-mainnet","snet.config.example.mainnet.json", "--daemon-config-path-mainnet-2","snet.config.example.mainnet-2.json","--daemon-config-path-ropsten","snet.config.example.ropsten.json"]
+# CMD ["python3.6", "run-snet-service.py","--daemon-config-path-mainnet","snet.config.example.mainnet.json", "--daemon-config-path-mainnet-2","snet.config.example.mainnet-2.json","--daemon-config-path-ropsten","snet.config.example.ropsten.json"]
+CMD ["python3.6", "run-snet-service.py","--daemon-config-path-mainnet_3", "snet.config.example.mainnet_3.json"]
